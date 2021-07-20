@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;miata_temp/miata_temp.ino&apos; to &apos;miata_temp.cpp&apos;" description="Rename resource &apos;miata_temp.ino&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="miata_temp.ino" name="miata_temp.cpp" stamp="1605267949163" updateReferences="true"/>
+</session>

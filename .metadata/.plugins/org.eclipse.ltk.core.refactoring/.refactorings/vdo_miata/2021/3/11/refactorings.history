@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;vdo_miata/sloeber.ino.cpp&apos; to &apos;main.cpp&apos;" description="Rename resource &apos;sloeber.ino.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="sloeber.ino.cpp" name="main.cpp" stamp="1615844272105" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;vdo_miata/constante&apos; to &apos;constante.cpp&apos;" description="Rename resource &apos;constante&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="constante" name="constante.cpp" stamp="1615844301249" updateReferences="true"/>
+</session>

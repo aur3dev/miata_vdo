@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;miata_tem_nano/bbqbuddy.ino&apos; to &apos;bbqbuddy.cpp&apos;" description="Rename resource &apos;bbqbuddy.ino&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="bbqbuddy.ino" name="bbqbuddy.cpp" stamp="1606585129819" updateReferences="true"/>
+</session>

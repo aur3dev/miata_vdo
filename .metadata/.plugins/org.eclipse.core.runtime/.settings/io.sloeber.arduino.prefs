@@ -1,0 +1,15 @@
+Automatically\ import\ libraries=true
+FbStatus=303
+FsStatus=23
+FuStatus=251
+JANTJE.TEMPLATE_USE_DEFAULT=defaultIno
+Last\ Used\ Upload\ port=COM4
+Last\ used\ Board=d32
+Last\ used\ Boards\ file=D\:\\sloeber_2019_esp32\\arduinoPlugin\\packages\\esp32\\hardware\\esp32\\1.0.1\\boards.txt
+Last\ used\ Examples=
+Private\ Library\ Path=C\:/Users/Aure/Arduino/libraries
+Private\ hardware\ Path=C\:/Users/Aure/Arduino/hardware
+eclipse.preferences.version=1
+lFsStatus=550
+last\ Used\ upload\ Protocol=Default
+last\ used\ Board\ custom\ option\ selections=DebugLevel\=none\nFlashFreq\=40\nPartitionScheme\=default\nUploadSpeed\=115200

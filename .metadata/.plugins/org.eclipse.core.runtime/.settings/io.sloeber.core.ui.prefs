@@ -1,0 +1,9 @@
+Build\ before\ upload\ option=FALSE
+Clean\ Serial\ Monitor\ after\ upload=false
+FmStatus=21
+Open\ serial\ connections\ with\ the\ monitor=true
+Serial\ Monitor\ Last\ Used\ Line\ Ending\ index=0
+Serial\ Monitor\ Last\ Used\ auto\ scroll\ setting=false
+Serial\ monitor\ last\ selected\ Port=COM5
+Serial\ monitor\ last\ selected\ rate=9600
+eclipse.preferences.version=1
