@@ -24,7 +24,7 @@
 DHT sensorOut(DHTPIN_out, DHTTYPE);
 DHT sensorIn(DHTPIN_in, DHTTYPE);
 
-
+boolean log = false;
 float humidityOut, temperatureOut, humidityIn, temperatureIn;
 
 float oilTemp=123.5;  //°c dummy value
@@ -36,6 +36,7 @@ float batVolt=12; //volt
 
 
 void temp();
+void sent();
 
 void setup() {
 
@@ -46,23 +47,18 @@ void setup() {
 void loop() {
 
 temp();
+sent();
+
 }
+
+
+
 void temp() {
 	humidityOut = sensorOut.readHumidity();
 			temperatureOut = sensorOut.readTemperature();
 
 			humidityIn = sensorIn.readHumidity();
 			temperatureIn = sensorIn.readTemperature();
-			  firstJSON["temperature in"] = humidityIn;
-			  firstJSON["humidity in"] = temperatureIn;
-			  firstJSON["temperature out"] = temperatureOut;
-			  firstJSON["humidity out"] =  humidityOut;
-			  firstJSON["oil temp"] = oilTemp;
-			  firstJSON["oil pressure"] = oilPressure;
-			  firstJSON["water temp"] = waterTemp;
-			  firstJSON["oil pressure"] = oilPressure;
-			 firstJSON["fuel level"] = fuelLevel;
-			 firstJSON["Batt volt"] = batVolt;
 
 
 
@@ -70,8 +66,11 @@ void temp() {
 			  char buffer[100];
 			  serializeJson(firstJSON, buffer);
 			  serializeJson(firstJSON, Serial);
-			//print log on console
-			//Serial.print("Humidity Out: ");
+
+			  //print log on console
+
+			  if (log==true) {
+			  //Serial.print("Humidity Out: ");
 			//Serial.print(" \t ");
 			//Serial.print("Temperature Out: ");
 		//	Serial.print(temperatureOut);
@@ -83,6 +82,18 @@ void temp() {
 			//Serial.print("Temperature In: ");
 		//	Serial.print(temperatureIn);
 		//	Serial.println(" *C ");
+			}
 			delay(2000);
 }
-
+void sent(){
+	firstJSON["temperature in"] = humidityIn;
+				  firstJSON["humidity in"] = temperatureIn;
+				  firstJSON["temperature out"] = temperatureOut;
+				  firstJSON["humidity out"] =  humidityOut;
+				  firstJSON["oil temp"] = oilTemp;
+				  firstJSON["oil pressure"] = oilPressure;
+				  firstJSON["water temp"] = waterTemp;
+				  firstJSON["oil pressure"] = oilPressure;
+				 firstJSON["fuel level"] = fuelLevel;
+				 firstJSON["Batt volt"] = batVolt;
+}
